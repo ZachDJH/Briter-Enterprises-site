@@ -231,7 +231,7 @@ header {
   }
 
   #menu-blur-on {
-    filter: blur(0px);
+    opacity: 0.2;
   }
 
   #mobile-blur-filter {
