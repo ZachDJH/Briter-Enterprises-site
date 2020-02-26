@@ -177,7 +177,7 @@ header {
 }
 
 @media screen and (max-width: 460px) {
-  #header-content > h1 {
+  #header-content > h1, p {
     font-size: 2rem;
   }
 }
@@ -231,7 +231,7 @@ header {
   }
 
   #menu-blur-on {
-    filter: blur(10px);
+    filter: blur(0px);
   }
 
   #mobile-blur-filter {
