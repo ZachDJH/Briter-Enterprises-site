@@ -74,18 +74,11 @@ function mobileMenu(e) {
 	const blurFilter = document.querySelector('.menu-no-blur');
 	const menu = document.querySelector('.mobile-menu');
 
-<<<<<<< HEAD
     if (menu.hasAttribute('id', 'show-menu') /*&& blurFilter.hasAttribute('id', 'menu-blur-on')*/) {
     	e.target.addEventListener('click', closeMenu(menu, blurFilter), true);
     } else {
     	//blurFilter.setAttribute('id', 'menu-blur-on');
-=======
-    if (menu.hasAttribute('id', 'show-menu') && blurFilter.hasAttribute('id', 'menu-blur-on')) {
-    	e.target.addEventListener('click', closeMenu(menu, blurFilter), true);
-    } else {
-    	blurFilter.setAttribute('id', 'menu-blur-on');
->>>>>>> 8a833da45544350e227d30e7fd46c3656797c52f
-	    menu.setAttribute('id', 'show-menu');
+    	menu.setAttribute('id', 'show-menu');
     }
 }
 
