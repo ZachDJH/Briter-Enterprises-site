@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Merriweather&display=swap');
 @import "fontawesome/css/all.css";
-
-
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 $bg-color: #0066ff;
 $font-anton: Anton, serif, sans-serif;
@@ -72,10 +72,28 @@ i.fa-envelope-square {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .header-bubble {
+    width: 220px;
+
+    & h2 {
+      font-size: 1.2rem;
+      padding-top: -20px;
+    }
+  }
+}
+
 .relative-position {
   position: relative;
 }
 
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 body {
   width: 100%;
@@ -90,9 +108,6 @@ body {
   font-size: 1.2rem;
 }
 
-main {
-  width: 100%;
-}
 
 .fade-in {
   animation-name: fade-into;
@@ -109,11 +124,14 @@ main {
 }
 
 nav {
+  /*
   position: -moz-sticky;
   position: -webkit-sticky;
   position: -o-sticky;
   position: -ms-sticky;
   position: sticky;
+  */
+  position: fixed;
   top: 0px;
   left: 0;
   right: 0;
@@ -136,8 +154,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ffff66;
-  height: 800px; 
+  width: 100%;
+  height: 100%;
   margin-top: -20px;
+}
+
+
+@media screen and (max-width: 900px) {
+  header { 
+    background-position: center;
+   
+  }
 }
 
 @keyframes fade-in {
@@ -167,6 +194,18 @@ header {
   & > h1 { font-size: 3.0rem; }
 }
 
+@media screen and (max-width: 460px) {
+  #header-content > h1, p {
+    font-size: 2.0rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #header-content > h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .is-relative {
   position: relative;
   width: 100%;
@@ -183,8 +222,9 @@ header {
 }
 
 #show-menu {
-  animation-duration: 1.0s;
+  animation-duration: 0.3s;
   animation-name: display-menu;
+  animation-fill-mode: forwards;
 }
 
 @keyframes display-menu {
@@ -202,13 +242,24 @@ header {
   visibility: hidden;
 }
 
-@media screen and (max-width: 962px) and (min-width: 200px) {
-  #mobile-blur-filter {
-    /*filter: blur(0px);*/
-  }
+.menu-no-blur {
+  filter: blur(0px);
+}
 
+
+
+@media screen and (max-width: 962px) and (min-width: 200px) {
   #navigation-content {
     display: none;
+  }
+
+  #menu-blur-on {
+    opacity: 0.2;
+  }
+
+  #mobile-blur-filter {
+    filter: blur(0px);
+    width: 100%;
   }
 
   .mobile-menu {
@@ -238,7 +289,7 @@ header {
     }
 
     & .nav-buttons > span > a {
-      padding-top: 10px;
+      padding-top: 10px;      
       color: black;  
     }
 
@@ -261,10 +312,6 @@ header {
 }
 
 @media screen and (min-width: 100px) and (max-width: 270px) and (min-height: 150px) and (orientation: portrait) {
-  #mobile-blur-filter {
-    /*filter: blur(5px);*/
-  }
-
   #navigation-content {
     display: none;
   }
@@ -430,7 +477,7 @@ header {
 
 div#mobile-button-wrapper {
   position: relative;
-  left: -20px;
+  left: -40px;
   display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -464,10 +511,10 @@ div#mobile-button-wrapper {
   }
 }
 
-@media screen and (min-width: 100px) and (min-height: 150px) and (orientation: portrait) {
-  #mobile-button-wrapper {
+@media screen and (max-width: 400px) and (min-height: 150px) and (orientation: portrait) {
+  div#mobile-button-wrapper {
     visibility: visible;
-    margin-left: 120px;
+    float: right;
   }
 }
 
@@ -556,6 +603,39 @@ div#mobile-button-wrapper {
   top: 100%;
 }
 
+@media screen and (max-width: 962px) {
+  .slider-item {
+    flex-direction: column;
+  }
+
+  .image-menu-header {
+    font-size: 0.6rem;
+    top: -180px;
+    width: 30%;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .image-menu-color {
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  #image-menu-up {
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    -ms-transition: 0.8s;
+    top: 100%;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .image-menu-color {
+  }
+}
+
 .projects-before-after {
   width: 100%;
   margin: 0 auto;
@@ -568,4 +648,11 @@ div#mobile-button-wrapper {
   margin-right: auto;
   width: 70%;
   box-shadow: 1px 1px 11px 1px;
+}
+
+
+@media screen and (max-width: 962px) {
+  .single-item {
+    width: 100%;
+  }
 }

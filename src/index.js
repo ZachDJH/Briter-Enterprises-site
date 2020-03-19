@@ -49,7 +49,7 @@ document.addEventListener('scroll', scroll, true);
 function scrollTo(e) {
 	const projects = document.querySelectorAll('.image-menu-header > a');
 	const index = [...projects].indexOf(e.target);
-	const arrayCoords = [1388, 2299];
+	const arrayCoords = [1388, 2550];
 	window.scrollTo({
 		top: arrayCoords[index],
 		behavior: 'smooth'
@@ -65,11 +65,21 @@ const projectSelect = () => {
 
 projectSelect();
 
-function mobileMenu() {
-	const blurFilter = document.getElementById('mobile-blur-filter');
+const closeMenu = (menu, blurFilter) => {
+	blurFilter.removeAttribute('id', 'menu-blur-on');
+	menu.removeAttribute('id', 'show-menu');
+}
+
+function mobileMenu(e) {
+	const blurFilter = document.querySelector('.menu-no-blur');
 	const menu = document.querySelector('.mobile-menu');
-	blurFilter.style.filter = 'blur(10px)';
-	menu.setAttribute('id', 'show-menu');
+
+    if (menu.hasAttribute('id', 'show-menu') /*&& blurFilter.hasAttribute('id', 'menu-blur-on')*/) {
+    	e.target.addEventListener('click', closeMenu(menu, blurFilter), true);
+    } else {
+    	//blurFilter.setAttribute('id', 'menu-blur-on');
+	    menu.setAttribute('id', 'show-menu');
+    }
 }
 
 document.getElementById('mobile-menu-button').addEventListener('click', mobileMenu, true);

@@ -8,6 +8,7 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
+    "minimist": "^1.2.5",
     "slick-carousel": "^1.8.1",
     "webpack": "^5.0.0-beta.13",
     "webpack-cli": "^4.0.0-beta.1"
