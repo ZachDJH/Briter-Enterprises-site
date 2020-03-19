@@ -88,9 +88,9 @@ $('.single-item').slick({
 	dots: true,
 	arrows: true,
 	autoplay: true,
-	fade: true,
+	//fade: true,
 	centerMode: true,
-	autoplaySpeed: 3000,
-	adaptiveHeight: true,
+	autoplaySpeed: 5000,
+	//adaptiveHeight: true,
 	swipe: true
 });
