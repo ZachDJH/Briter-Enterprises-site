@@ -253,7 +253,7 @@ header {
   }
 
   #menu-blur-on {
-    opacity: 0.2;
+    filter: blur(10px);
   }
 
   #mobile-blur-filter {
@@ -636,22 +636,44 @@ div#mobile-button-wrapper {
 }
 
 .projects-before-after {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   font-family: $font-merry;
+}
+
+@media screen and (max-width: 962px) {
+  .projects-before-after {
+    width: 100%;
+  }
 }
 
 .single-item  {
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
   box-shadow: 1px 1px 11px 1px;
 }
 
+@media screen and (max-width: 4000px) {
+  .large-image { display: contents; }
+
+  .medium-image { display: none; }
+
+  .small-image { display: none; }
+}
 
 @media screen and (max-width: 962px) {
-  .single-item {
-    width: 200px;
-  }
+  .large-image { display: none; }
+
+  .medium-image { display: contents; }
+
+  .small-image { display: none; }
+}
+
+@media screen and (max-width: 481px) {
+  .large-image { display: none; }
+
+  .medium-image { display: none; }
+
+  .small-image { display: contents; }
 }

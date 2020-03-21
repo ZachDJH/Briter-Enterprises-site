@@ -77,7 +77,7 @@ function mobileMenu(e) {
     if (menu.hasAttribute('id', 'show-menu') /*&& blurFilter.hasAttribute('id', 'menu-blur-on')*/) {
     	e.target.addEventListener('click', closeMenu(menu, blurFilter), true);
     } else {
-    	//blurFilter.setAttribute('id', 'menu-blur-on');
+    	blurFilter.setAttribute('id', 'menu-blur-on');
     	menu.setAttribute('id', 'show-menu');
     }
 }
@@ -88,8 +88,8 @@ $('.single-item').slick({
 	dots: true,
 	arrows: true,
 	autoplay: true,
-	//fade: true,
-	//centerMode: true,
+	fade: true,
+	centerMode: true,
 	autoplaySpeed: 5000,
 	adaptiveHeight: true,
 	swipe: true
