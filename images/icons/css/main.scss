@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Merriweather&display=swap');
 @import "fontawesome/css/all.css";
+/*
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
-
+*/
 $bg-color: #0066ff;
 $font-anton: Anton, serif, sans-serif;
 $font-merry: Merriweather, serif, sans-serif;
@@ -271,6 +272,7 @@ header {
     left: -15px;
     right: 0;
     width: 100%;
+    /*background-color: pink;*/
     z-index: 20;
     & .nav-buttons > span {
       flex-direction: column;
@@ -297,12 +299,15 @@ header {
       flex-direction: column;
       text-align: center;
       margin-top: 60px;
+      color: black;
     }
 
-    & .contact-info > span > a {
+    & .contact > a {
       width: 2px;
       color: black;
     }
+
+    & .contact-icon { color: black; }
 
     & .contact {
       height: 50px;

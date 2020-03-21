@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Merriweather&display=swap");
 @import "fontawesome/css/all.css";
+/*
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+*/
 i.fa-envelope-square {
   color: white;
 }
@@ -255,6 +257,7 @@ header {
     left: -15px;
     right: 0;
     width: 100%;
+    /*background-color: pink;*/
     z-index: 20;
   }
   .mobile-menu .nav-buttons > span {
@@ -279,9 +282,13 @@ header {
     flex-direction: column;
     text-align: center;
     margin-top: 60px;
+    color: black;
   }
-  .mobile-menu .contact-info > span > a {
+  .mobile-menu .contact > a {
     width: 2px;
+    color: black;
+  }
+  .mobile-menu .contact-icon {
     color: black;
   }
   .mobile-menu .contact {
