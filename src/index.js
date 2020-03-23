@@ -1,6 +1,11 @@
 import _ from 'lodash';
 import $ from 'jquery';
-import slick from 'slick-carousel';
+//require('owl.carousel');
+
+//import '../node_modules/owl.carousel/dist/owl.carousel';
+//import slick from 'slick-carousel';
+
+
 
 function hopIcon() {
 	function restoreIconPosition() {
@@ -84,6 +89,7 @@ function mobileMenu(e) {
 
 document.getElementById('mobile-menu-button').addEventListener('click', mobileMenu, true);
 
+/*
 $('.single-item').slick({
 	dots: true,
 	arrows: true,
@@ -94,3 +100,4 @@ $('.single-item').slick({
 	adaptiveHeight: true,
 	swipe: true
 });
+*/
