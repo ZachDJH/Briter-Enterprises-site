@@ -1,11 +1,5 @@
 import _ from 'lodash';
 import $ from 'jquery';
-//require('owl.carousel');
-
-//import '../node_modules/owl.carousel/dist/owl.carousel';
-//import slick from 'slick-carousel';
-
-
 
 function hopIcon() {
 	function restoreIconPosition() {
@@ -82,7 +76,7 @@ function mobileMenu(e) {
     if (menu.hasAttribute('id', 'show-menu') /*&& blurFilter.hasAttribute('id', 'menu-blur-on')*/) {
     	e.target.addEventListener('click', closeMenu(menu, blurFilter), true);
     } else {
-    	blurFilter.setAttribute('id', 'menu-blur-on');
+    	//blurFilter.setAttribute('id', 'menu-blur-on');
     	menu.setAttribute('id', 'show-menu');
     }
 }
