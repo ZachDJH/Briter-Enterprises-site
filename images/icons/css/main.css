@@ -232,8 +232,12 @@ header {
     left: 0%;
   }
 }
-#hide-menu {
-  visibility: hidden;
+#hide-mobile-menu {
+  display: none;
+}
+
+#display-mobile-menu {
+  display: contents;
 }
 
 .menu-no-blur {

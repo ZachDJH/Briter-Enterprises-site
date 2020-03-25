@@ -65,18 +65,23 @@ const projectSelect = () => {
 projectSelect();
 
 const closeMenu = (menu, blurFilter) => {
+	const hide = document.getElementById('display-mobile-menu');
+
 	blurFilter.removeAttribute('id', 'menu-blur-on');
 	menu.removeAttribute('id', 'show-menu');
+	hide.setAttribute('id', 'hide-mobile-menu');
 }
 
 function mobileMenu(e) {
 	const blurFilter = document.querySelector('.menu-no-blur');
 	const menu = document.querySelector('.mobile-menu');
+	const display = document.getElementById('hide-mobile-menu');
 
     if (menu.hasAttribute('id', 'show-menu') /*&& blurFilter.hasAttribute('id', 'menu-blur-on')*/) {
     	e.target.addEventListener('click', closeMenu(menu, blurFilter), true);
     } else {
     	//blurFilter.setAttribute('id', 'menu-blur-on');
+    	display.setAttribute('id', 'display-mobile-menu');
     	menu.setAttribute('id', 'show-menu');
     }
 }

@@ -247,8 +247,12 @@ header {
   }
 }
 
-#hide-menu {
-  visibility: hidden;
+#hide-mobile-menu {
+  display: none;
+}
+
+#display-mobile-menu {
+  display: contents;
 }
 
 .menu-no-blur {
@@ -272,6 +276,7 @@ header {
 
   .mobile-menu {
     /*visibility: hidden;*/
+
     background-color: white;
     display: flex;
     flex-direction: column;
