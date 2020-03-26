@@ -224,11 +224,9 @@ header {
   flex-direction: row;
 }
 
-.mobile-menu {
-  display: none;
-}
+.no-display { display: none; }
 
-#show-menu {
+#show-mobile-menu {
   animation-duration: 0.3s;
   animation-name: display-menu;
   animation-fill-mode: forwards;
@@ -248,7 +246,23 @@ header {
 }
 
 #hide-mobile-menu {
-  display: none;
+  animation-duration: 0.3s;
+  animation-name: hide-menu;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide-menu {
+  from {
+    visibility: visible;
+    opacity: 0;
+    left: 0%;
+  }
+  to {
+    visibility: hidden;
+    opacity: 1;
+    left: 100%;
+    display: none;
+  }
 }
 
 #display-mobile-menu {
@@ -259,6 +273,9 @@ header {
   filter: blur(0px);
 }
 
+@media screen and (max-width: 3000px) {
+  .mobile-menu { display: none; }
+}
 
 @media screen and (max-width: 962px) and (min-width: 200px) {
   #navigation-content {
@@ -277,7 +294,6 @@ header {
   .mobile-menu {
     /*visibility: hidden;*/
 
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
