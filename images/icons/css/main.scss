@@ -224,9 +224,26 @@ header {
   flex-direction: row;
 }
 
-.no-display { display: none; }
+#no-display { display: none; }
 
-#show-mobile-menu {
+#hide-mobile-menu > .mobile-menu  {
+  animation-duration: 1.0s;
+  animation-name: hide-menu;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide-menu {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  to {
+    opacity: 1;
+    left: 100%;
+  }
+}
+
+#show-mobile-menu > .mobile-menu {
   animation-duration: 0.3s;
   animation-name: display-menu;
   animation-fill-mode: forwards;
@@ -245,28 +262,8 @@ header {
   }
 }
 
-#hide-mobile-menu {
-  animation-duration: 0.3s;
-  animation-name: hide-menu;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hide-menu {
-  from {
-    visibility: visible;
-    opacity: 0;
-    left: 0%;
-  }
-  to {
-    visibility: hidden;
-    opacity: 1;
-    left: 100%;
-    display: none;
-  }
-}
-
-#display-mobile-menu {
-  display: contents;
+.display-mobile-menu {
+  display: contents !important;
 }
 
 .menu-no-blur {

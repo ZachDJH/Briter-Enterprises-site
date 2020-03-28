@@ -1,5 +1,5 @@
-import _ from 'lodash';
-import $ from 'jquery';
+//import _ from 'lodash';
+//import $ from 'jquery';
 
 function hopIcon() {
 	function restoreIconPosition() {
@@ -65,28 +65,30 @@ const projectSelect = () => {
 projectSelect();
 
 const closeMenu = (showMenu, blurFilter) => {
-	const hideMenu = document.getElementById('display-mobile-menu');
-
 	blurFilter.removeAttribute('id', 'menu-blur-on');
-	showMenu.removeAttribute('id', 'show-mobile-menu');
-	hideMenu.setAttribute('id', 'hide-mobile-menu');
+	showMenu.setAttribute('id', 'hide-mobile-menu');
+	setTimeout(() => {
+		showMenu.setAttribute('id', 'no-display');
+	}, 500)
 }
 
-function mobileMenu(e) {
+function mobileMenu() {
 	const blurFilter = document.querySelector('.menu-no-blur');
-	const showMenu = document.querySelector('.mobile-menu');
-	const menuTransition = document.getElementById('hide-mobile-menu');
+	const showMenu = document.querySelector('#no-display');
 
-    if (showMenu.hasAttribute('id', 'show-mobile-menu') /*&& blurFilter.hasAttribute('id', 'menu-blur-on')*/) {
-    	e.target.addEventListener('click', closeMenu(showMenu, blurFilter), true);
-    } else {
-    	blurFilter.setAttribute('id', 'menu-blur-on');
-    	menuTransition.setAttribute('id', 'display-mobile-menu');
-    	showMenu.setAttribute('id', 'show-mobile-menu');
+	const displayMobileMenu = (e) => {
+        if (showMenu.id === 'hide-mobile-menu' || showMenu.id === 'no-display') {
+    	    blurFilter.setAttribute('id', 'menu-blur-on');
+    	    showMenu.setAttribute('id', 'show-mobile-menu');
+    	} else if (showMenu.id === 'show-mobile-menu') {
+    		e.target.addEventListener('click', closeMenu(showMenu, blurFilter), false);
+        }
     }
+    document.getElementById('mobile-menu-button').addEventListener('click', displayMobileMenu);
 }
+mobileMenu();
 
-document.getElementById('mobile-menu-button').addEventListener('click', mobileMenu, true);
+
 
 /*
 $('.single-item').slick({
