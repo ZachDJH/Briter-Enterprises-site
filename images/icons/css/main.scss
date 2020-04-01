@@ -198,12 +198,12 @@ header {
   right: 0;
   z-index: 5;
   opacity: 1;
-  & > h1 { font-size: 3.0rem; }
+  & > h1 { font-size: 4.0rem; }
 }
 
 @media screen and (max-width: 460px) {
-  #header-content > h1, p {
-    font-size: 2.0rem;
+  #header-content > h1 {
+    font-size: 2.7rem;
   }
 }
 
@@ -716,4 +716,10 @@ div#mobile-button-wrapper {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 1px 1px 11px 1px;
+}
+
+.item  {
+  display: flex;
+  flex-direction: row;
+  & > img { border: 1px solid black; }
 }

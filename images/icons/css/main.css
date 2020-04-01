@@ -186,12 +186,12 @@ header {
   opacity: 1;
 }
 #header-content > h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 @media screen and (max-width: 460px) {
-  #header-content > h1, p {
-    font-size: 2rem;
+  #header-content > h1 {
+    font-size: 2.7rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -690,6 +690,14 @@ div#mobile-button-wrapper {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 1px 1px 11px 1px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+.item > img {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=main.css.map */
