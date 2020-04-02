@@ -699,5 +699,14 @@ div#mobile-button-wrapper {
 .item > img {
   border: 1px solid black;
 }
+.item > .header-bubble {
+  position: absolute;
+  top: 10%;
+  left: 38%;
+  text-align: center;
+}
+.item > .header-bubble > h2 {
+  margin-top: 0px;
+}
 
 /*# sourceMappingURL=main.css.map */

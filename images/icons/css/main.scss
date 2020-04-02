@@ -722,4 +722,13 @@ div#mobile-button-wrapper {
   display: flex;
   flex-direction: row;
   & > img { border: 1px solid black; }
+  & > .header-bubble {
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    text-align: center;
+    & > h2 {
+      margin-top: -0px;
+    }
+  }
 }
