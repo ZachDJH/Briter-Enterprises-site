@@ -7,11 +7,11 @@ function hopIcon() {
 	}
 	this.querySelector('.contact-icon').setAttribute('id', 'rotate-contact-icon');
 	this.addEventListener('mouseout', restoreIconPosition, true);
-	console.log("Fired");
 }
 
 function hopContactIcons() {
-	const container = document.querySelectorAll('.contact-info');
+	const container = document.querySelectorAll('.contact');
+	console.log(container);
 	for (let i = 0; i < container.length; i++) {
 		container[i].addEventListener('mouseover', hopIcon, true);
 	}
