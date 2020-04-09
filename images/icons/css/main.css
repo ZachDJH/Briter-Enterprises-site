@@ -524,6 +524,7 @@ div#mobile-button-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
   width: 100%;
 }
 .slider-item .image-panning {
@@ -534,7 +535,7 @@ div#mobile-button-wrapper {
   border: 1px solid black;
 }
 .slider-item .image-panning > img {
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
 }
 .slider-item .image-panning > img:hover {

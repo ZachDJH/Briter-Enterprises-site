@@ -557,8 +557,11 @@ div#mobile-button-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  justify-content: center;
   width: 100%;
   & .image-panning {
+
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -566,7 +569,7 @@ div#mobile-button-wrapper {
     border: 1px solid black;
   }
   & .image-panning > img { 
-    max-width: 100%;
+    min-width: 100%;
     height: auto;
   }
   & .image-panning > img:hover {

@@ -11,7 +11,6 @@ function hopIcon() {
 
 function hopContactIcons() {
 	const container = document.querySelectorAll('.contact');
-	console.log(container);
 	for (let i = 0; i < container.length; i++) {
 		container[i].addEventListener('mouseover', hopIcon, true);
 	}
