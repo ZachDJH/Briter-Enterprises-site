@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import "fontawesome/css/all.css";
 /*
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 */
+
+
 $bg-color: #0066ff;
-$font-anton: Anton, serif, sans-serif;
+$font-crims: Crimson Text, serif, sans-serif;
 $font-merry: Merriweather, serif, sans-serif;
+$font-alfa: Alfa Slab One, cursive;
 
 i.fa-envelope-square {
-  color: white;
+  color: black;
 }
 
+/* General use classes */
 .center-text { text-align: center; }
 
 .icon-size-small {
@@ -26,6 +32,18 @@ i.fa-envelope-square {
   font-size: 3.0rem;
 }
 
+.relative-position {
+  position: relative;
+}
+
+.is-relative {
+  position: relative;
+  width: 100%;
+}
+
+.font-small { font-size: 0.9rem; }
+
+/*End*/
 
     .hexagon {
       width: 100px;
@@ -84,11 +102,6 @@ i.fa-envelope-square {
   }
 }
 
-.relative-position {
-  position: relative;
-}
-
-
 html {
   width: 100%;
   margin: 0;
@@ -141,19 +154,22 @@ nav {
   left: 0;
   right: 0;
   z-index: 30;
-  background-color: $bg-color;
+  background-color: #ffffff;
   width: 100%;
-  height: 100px;
+  height: 140px;
   box-shadow: 0px 1px 10px 2px;
 }
 
+.nav-buttons {
+  margin-left: -100px;
+}
 
 
 header {
   animation-name: fade-in;
   animation-duration: 1.5s;
   opacity: 1;
-  font-family: $font-anton;
+  font-family: $font-crims;
   margin-top: 20px;
   /*background-image: url('../../Briter-Enterprises-Pictures-47.jpg');*/
   background-repeat: no-repeat;
@@ -211,15 +227,14 @@ header {
   }
 }
 
-.is-relative {
-  position: relative;
-  width: 100%;
-}
+
 
 #navigation-content {
   display: flex;
   flex: 1;
   flex-direction: row;
+  margin-top: 120px;
+  margin-left: 350px;
 }
 
 #no-display { display: none; }
@@ -304,7 +319,7 @@ header {
       flex-wrap: wrap;
       flex: 1;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 40px;
     }
 
     & .nav-buttons  {
@@ -394,7 +409,15 @@ header {
 }
 
 #logo {
-  width: 75px;
+  position: absolute;
+  top: -10px;
+  cursor: default;
+  margin-left: 100px;
+  font-family: $font-alfa;
+  & > h1 > span {
+    border-top: 2px solid blue;
+    margin-left: -40px;
+  }
 }
 
 .nav-buttons {
@@ -443,14 +466,14 @@ header {
   flex: 1;
   flex-direction: row;
   flex-wrap: nowrap;
-  color: white;
+  color: black;
 }
 
 .contact-info-style > a {
   width: 1px;
-  color: white; 
+  color: black; 
   text-decoration: none;
-  font-family: $font-anton;
+  font-family: "Crimson Text";
   margin-left: 1px;
 }
 
@@ -486,7 +509,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: white;
+  color: black;
 }
 
 #rotate-contact-icon {
@@ -511,7 +534,7 @@ div#mobile-button-wrapper {
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  margin-top: -75px;
+  margin-top: 40px;
   z-index: 20;
 }
 
@@ -525,7 +548,7 @@ div#mobile-button-wrapper {
     height: 6px;
     margin-top: 5px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #000000;
   }
 }
 

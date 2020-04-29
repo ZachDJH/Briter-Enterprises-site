@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import "fontawesome/css/all.css";
 /*
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 */
 i.fa-envelope-square {
-  color: white;
+  color: black;
 }
 
+/* General use classes */
 .center-text {
   text-align: center;
 }
@@ -24,6 +27,20 @@ i.fa-envelope-square {
   font-size: 3rem;
 }
 
+.relative-position {
+  position: relative;
+}
+
+.is-relative {
+  position: relative;
+  width: 100%;
+}
+
+.font-small {
+  font-size: 0.9rem;
+}
+
+/*End*/
 .hexagon {
   width: 100px;
   height: 55px;
@@ -81,10 +98,6 @@ i.fa-envelope-square {
     padding-top: -20px;
   }
 }
-.relative-position {
-  position: relative;
-}
-
 html {
   width: 100%;
   margin: 0;
@@ -135,17 +148,21 @@ nav {
   left: 0;
   right: 0;
   z-index: 30;
-  background-color: #0066ff;
+  background-color: #ffffff;
   width: 100%;
-  height: 100px;
+  height: 140px;
   box-shadow: 0px 1px 10px 2px;
+}
+
+.nav-buttons {
+  margin-left: -100px;
 }
 
 header {
   animation-name: fade-in;
   animation-duration: 1.5s;
   opacity: 1;
-  font-family: Anton, serif, sans-serif;
+  font-family: Crimson Text, serif, sans-serif;
   margin-top: 20px;
   /*background-image: url('../../Briter-Enterprises-Pictures-47.jpg');*/
   background-repeat: no-repeat;
@@ -198,15 +215,12 @@ header {
     font-size: 1.5rem;
   }
 }
-.is-relative {
-  position: relative;
-  width: 100%;
-}
-
 #navigation-content {
   display: flex;
   flex: 1;
   flex-direction: row;
+  margin-top: 120px;
+  margin-left: 350px;
 }
 
 #no-display {
@@ -292,7 +306,7 @@ header {
     flex-wrap: wrap;
     flex: 1;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .mobile-menu .nav-buttons {
     display: flex;
@@ -370,7 +384,15 @@ header {
   }
 }
 #logo {
-  width: 75px;
+  position: absolute;
+  top: -10px;
+  cursor: default;
+  margin-left: 100px;
+  font-family: Alfa Slab One, cursive;
+}
+#logo > h1 > span {
+  border-top: 2px solid blue;
+  margin-left: -40px;
 }
 
 .nav-buttons {
@@ -417,14 +439,14 @@ header {
   flex: 1;
   flex-direction: row;
   flex-wrap: nowrap;
-  color: white;
+  color: black;
 }
 
 .contact-info-style > a {
   width: 1px;
-  color: white;
+  color: black;
   text-decoration: none;
-  font-family: Anton, serif, sans-serif;
+  font-family: "Crimson Text";
   margin-left: 1px;
 }
 
@@ -457,7 +479,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: white;
+  color: black;
 }
 
 #rotate-contact-icon {
@@ -481,7 +503,7 @@ div#mobile-button-wrapper {
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  margin-top: -75px;
+  margin-top: 40px;
   z-index: 20;
 }
 
@@ -496,7 +518,7 @@ div#mobile-button-wrapper {
   height: 6px;
   margin-top: 5px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #000000;
 }
 
 @media screen and (max-width: 10000px) {
