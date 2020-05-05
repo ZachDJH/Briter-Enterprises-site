@@ -1,5 +1,6 @@
-//import _ from 'lodash';
-//import $ from 'jquery';
+import _ from 'lodash';
+import $ from 'jquery';
+import "slick-carousel";
 
 function hopIcon() {
 	function restoreIconPosition() {
@@ -90,15 +91,23 @@ mobileMenu();
 
 
 
-/*
+
 $('.single-item').slick({
 	dots: true,
 	arrows: true,
 	autoplay: true,
+	//slidesToShow: 1,
 	fade: true,
 	centerMode: true,
-	autoplaySpeed: 5000,
+	horizontal: true,
+	autoplaySpeed: 3000,
 	adaptiveHeight: true,
 	swipe: true
 });
-*/
+
+
+const fruitBasket = ['Apple', 'Orange', 'Grapefruit', 'Tomato', 'Cucumber', 'Peach'];
+
+const findVeggies = fruitBasket.filter(veg => veg.toLowerCase() !== 'cucumber');
+
+console.log(findVeggies);
