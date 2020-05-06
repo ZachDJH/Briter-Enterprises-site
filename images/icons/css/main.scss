@@ -413,20 +413,21 @@ header {
 #logo {
   position: absolute;
   top: 5px;
-  margin-left: 100px;
+  margin-left: 140px;
   font-family: $font-merry;
-  color: #0066ff;
+  color: #000080;
   font-size: 1.5rem;
   & > h1 { cursor: default; }
   & > h1 > span {
     padding-top: 0%;
-    margin-left: -40px;
-    border-top: 2px solid /*#ffff1a*/ #ffff00;
+    margin-left: -55px;
+    letter-spacing: 4px;
+    border-top: 6px solid /*#ffff1a*/ #ffff00;
   }
   & > h1 > .text-position {
     position: relative;
-    top: -25px;
-    left: 17px;
+    top: -20px;
+    left: 0px;
   }
 }
 

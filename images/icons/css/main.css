@@ -387,9 +387,9 @@ header {
 #logo {
   position: absolute;
   top: 5px;
-  margin-left: 100px;
+  margin-left: 140px;
   font-family: Merriweather, serif, sans-serif;
-  color: #0066ff;
+  color: #000080;
   font-size: 1.5rem;
 }
 #logo > h1 {
@@ -397,13 +397,14 @@ header {
 }
 #logo > h1 > span {
   padding-top: 0%;
-  margin-left: -40px;
-  border-top: 2px solid #ffff00;
+  margin-left: -55px;
+  letter-spacing: 4px;
+  border-top: 6px solid #ffff00;
 }
 #logo > h1 > .text-position {
   position: relative;
-  top: -25px;
-  left: 17px;
+  top: -20px;
+  left: 0px;
 }
 
 @media screen and (max-width: 400px) {
