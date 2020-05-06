@@ -402,7 +402,7 @@ header {
 }
 #logo > h1 > .text-position {
   position: relative;
-  top: -15px;
+  top: -25px;
   left: 17px;
 }
 
@@ -455,8 +455,7 @@ header {
 .contact-info {
   position: relative;
   left: -40px;
-  margin-top: -59px;
-  padding-left: 20px;
+  top: -59px;
   display: flex;
   justify-content: flex-end;
   flex: 1;
