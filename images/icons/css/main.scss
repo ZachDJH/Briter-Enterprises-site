@@ -9,6 +9,7 @@
 
 
 $bg-color: #0066ff;
+$font-anton: Anton;
 $font-crims: Crimson Text, serif, sans-serif;
 $font-merry: Merriweather, serif, sans-serif;
 $font-alfa: Alfa Slab One, cursive;
@@ -348,7 +349,7 @@ header {
       color: black;
     }
 
-    & .contact-icon { color: black; }
+    & .contact-icon { color: #0066ff; }
 
     & .contact {
       height: 50px;
@@ -411,13 +412,21 @@ header {
 
 #logo {
   position: absolute;
-  top: -10px;
+  top: 5px;
   margin-left: 100px;
-  font-family: $font-alfa;
+  font-family: $font-merry;
+  color: #0066ff;
+  font-size: 1.5rem;
   & > h1 { cursor: default; }
   & > h1 > span {
-    border-top: 2px solid blue;
+    padding-top: 0%;
     margin-left: -40px;
+    border-top: 2px solid /*#ffff1a*/ #ffff00;
+  }
+  & > h1 > .text-position {
+    position: relative;
+    top: -15px;
+    left: 17px;
   }
 }
 
@@ -469,6 +478,8 @@ header {
 
 
 .contact-info {
+  position: relative;
+  left: -40px;
   margin-top: -59px;
   padding-left: 20px;
   display: flex;
@@ -519,7 +530,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: black;
+  color: #0066ff;
 }
 
 #rotate-contact-icon {
@@ -703,7 +714,7 @@ div#mobile-button-wrapper {
 }
 
 .projects-before-after {
-  width: 90%;
+  width: 60%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

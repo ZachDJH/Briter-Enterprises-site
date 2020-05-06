@@ -111,3 +111,19 @@ const fruitBasket = ['Apple', 'Orange', 'Grapefruit', 'Tomato', 'Cucumber', 'Pea
 const findVeggies = fruitBasket.filter(veg => veg.toLowerCase() !== 'cucumber');
 
 console.log(findVeggies);
+
+/*
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    nav: true,
+    dots: true,
+    center: true,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    //autoWidth: true,
+    autoHeight: true,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut'
+});
+*/

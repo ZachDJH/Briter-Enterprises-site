@@ -331,7 +331,7 @@ header {
     color: black;
   }
   .mobile-menu .contact-icon {
-    color: black;
+    color: #0066ff;
   }
   .mobile-menu .contact {
     height: 50px;
@@ -386,16 +386,24 @@ header {
 }
 #logo {
   position: absolute;
-  top: -10px;
+  top: 5px;
   margin-left: 100px;
-  font-family: Alfa Slab One, cursive;
+  font-family: Merriweather, serif, sans-serif;
+  color: #0066ff;
+  font-size: 1.5rem;
 }
 #logo > h1 {
   cursor: default;
 }
 #logo > h1 > span {
-  border-top: 2px solid blue;
+  padding-top: 0%;
   margin-left: -40px;
+  border-top: 2px solid #ffff00;
+}
+#logo > h1 > .text-position {
+  position: relative;
+  top: -15px;
+  left: 17px;
 }
 
 @media screen and (max-width: 400px) {
@@ -445,6 +453,8 @@ header {
 }
 
 .contact-info {
+  position: relative;
+  left: -40px;
   margin-top: -59px;
   padding-left: 20px;
   display: flex;
@@ -492,7 +502,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: black;
+  color: #0066ff;
 }
 
 #rotate-contact-icon {
@@ -665,7 +675,7 @@ div#mobile-button-wrapper {
   }
 }
 .projects-before-after {
-  width: 90%;
+  width: 60%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
