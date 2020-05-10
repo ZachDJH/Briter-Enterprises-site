@@ -44,7 +44,7 @@ i.fa-envelope-square {
 .hexagon {
   width: 100px;
   height: 55px;
-  background: #0066ff;
+  background: #000080;
   position: relative;
   margin-top: 120px;
   margin-left: auto;
@@ -60,7 +60,7 @@ i.fa-envelope-square {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 25px solid #0066ff;
+  border-bottom: 25px solid #000080;
 }
 
 .hexagon:after {
@@ -72,11 +72,11 @@ i.fa-envelope-square {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 25px solid #0066ff;
+  border-top: 25px solid #000080;
 }
 
 .header-bubble {
-  background-color: #0066ff;
+  background-color: #000080;
   border-radius: 40px;
   width: 300px;
   height: 70px;
@@ -410,11 +410,29 @@ header {
 @media screen and (max-width: 400px) {
   #logo {
     top: 20px;
-    margin-left: 50px;
-    font-size: 0.6rem;
+    margin-left: 60px;
+    font-size: 1.2rem;
+  }
+  #logo > h1 > .text-position {
+    top: -17px;
   }
   #logo > h1 > span {
     font-size: 0.6rem;
+    margin-left: -40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #logo {
+    top: 20px;
+    margin-left: 35px;
+    font-size: 1rem;
+  }
+  #logo > h1 > .text-position {
+    top: -17px;
+  }
+  #logo > h1 > span {
+    font-size: 0.4rem;
+    margin-left: -30px;
   }
 }
 .nav-buttons {
@@ -502,7 +520,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: #0066ff;
+  color: #000080;
 }
 
 #rotate-contact-icon {
@@ -603,7 +621,7 @@ div#mobile-button-wrapper {
 
 .image-menu {
   position: absolute;
-  top: 100%;
+  top: 72%;
   left: 0;
   right: 0;
   width: 100%;
@@ -614,7 +632,7 @@ div#mobile-button-wrapper {
 
 .image-menu-header {
   position: relative;
-  top: -150px;
+  top: -70%;
   color: white;
 }
 .image-menu-header > a {
@@ -625,10 +643,11 @@ div#mobile-button-wrapper {
 .image-menu-color {
   width: 100%;
   height: 200px;
-  background-color: #0066ff;
+  background-color: #000080;
   opacity: 0.6;
 }
 
+/*
 #image-menu-up {
   transition: 0.8s;
   -moz-transition: 0.8s;
@@ -646,15 +665,24 @@ div#mobile-button-wrapper {
   -ms-transition: 0.8s;
   top: 100%;
 }
-
+*/
+@media screen and (max-width: 1172px) {
+  .image-menu {
+    top: 55%;
+  }
+}
 @media screen and (max-width: 962px) {
   .slider-item {
     flex-direction: column;
   }
 
+  .image-menu {
+    top: 86%;
+  }
+
   .image-menu-header {
-    font-size: 0.6rem;
-    top: -180px;
+    font-size: 0.9rem;
+    top: -70%;
     width: 30%;
     height: 60px;
     margin: 0 auto;
@@ -665,6 +693,7 @@ div#mobile-button-wrapper {
     margin-top: -100px;
   }
 
+  /*
   #image-menu-up {
     transition: 0.8s;
     -moz-transition: 0.8s;
@@ -672,6 +701,19 @@ div#mobile-button-wrapper {
     -o-transition: 0.8s;
     -ms-transition: 0.8s;
     top: 100%;
+  }
+  */
+}
+@media screen and (max-width: 362px) {
+  .image-menu {
+    top: 120%;
+  }
+  .image-menu > .image-menu-color {
+    height: 70px;
+  }
+  .image-menu > .image-menu-header {
+    top: -30%;
+    font-size: 0.7rem;
   }
 }
 .projects-before-after {
