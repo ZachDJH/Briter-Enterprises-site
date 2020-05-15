@@ -49,14 +49,4 @@ module.exports = {
 	  	'window.jQuery': 'jquery',
 	  })
 	],
-
-	resolve: {
-		modules: ['node_modules'],
-		//path.resolve(__dirname, 'owl.carousel/dist/owl.carousel.min.js'),
-		alias: {
-			
-		    //'owl.carousel': path.resolve(__dirname, 'owl.carousel/dist/owl.carousel.min.js')
-		    //jquery: path.resolve(__dirname, 'jquery/dist/jquery.js')
-		}
-    }
 };
