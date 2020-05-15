@@ -1,6 +1,24 @@
-import _ from 'lodash';
-import $ from 'jquery';
-import "slick-carousel";
+/*
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
+*/
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas, far, fab) 
+
+dom.i2svg() 
+
+//import '../images/icons/css/main.scss';
+//import _ from 'lodash';
+//import $ from 'jquery';
+//require("imports-loader?$=jquery/owl.carousel.js");
+//import 'owl.carousel';
+//import "slick-carousel";
 
 function hopIcon() {
 	function restoreIconPosition() {
@@ -73,7 +91,7 @@ const closeMenu = (showMenu, blurFilter) => {
 	}, 500)
 }
 
-function mobileMenu() {
+const mobileMenu = () => {
 	const blurFilter = document.querySelector('.menu-no-blur');
 	const showMenu = document.querySelector('#no-display');
 
@@ -91,7 +109,7 @@ mobileMenu();
 
 
 
-
+/*
 $('.single-item').slick({
 	dots: true,
 	arrows: true,
@@ -104,13 +122,7 @@ $('.single-item').slick({
 	adaptiveHeight: true,
 	swipe: true
 });
-
-
-const fruitBasket = ['Apple', 'Orange', 'Grapefruit', 'Tomato', 'Cucumber', 'Peach'];
-
-const findVeggies = fruitBasket.filter(veg => veg.toLowerCase() !== 'cucumber');
-
-console.log(findVeggies);
+*/
 
 /*
 $('.owl-carousel').owlCarousel({
