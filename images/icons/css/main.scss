@@ -618,43 +618,47 @@ div#mobile-button-wrapper {
   width: 100%;
 }
 
-.slider-item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+#projects {
   margin-top: 160px;
-  justify-content: center;
-  width: 100%;
-  & .image-panning {
+    & .slider-item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      width: 100%;
 
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
-    border: 1px solid black;
-  }
-  & .image-panning > img { 
-    min-width: 100%;
-    height: auto;
-  }
-  & .image-panning > img:hover {
-    transition: 0.5s;
-    -moz-transition: all 3.5s ease;
-    -webkit-transition: all 3.5s ease;
-    -o-transition: all 3.5s ease;
-    -ms-transition: all 3.5s ease;
-    transform: scale(1.4);
-  }
-  & .image-panning > img:not(:hover) {
-    transition: 3.5s;
-    -moz-transition: all 3.5s ease;
-    -webkit-transition: all 3.5s ease;
-    -o-transition: all 3.5s ease;
-    -ms-transition: all 3.5s ease;
-    transform: scale(1.1);
+    & .image-panning {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      white-space: nowrap;
+      border: 1px solid black;
+    }
+
+    & .image-panning > img { 
+      min-width: 100%;
+      height: auto;
+    }
+
+    & .image-panning > img:hover {
+      transition: 0.5s;
+      -moz-transition: all 3.5s ease;
+      -webkit-transition: all 3.5s ease;
+      -o-transition: all 3.5s ease;
+      -ms-transition: all 3.5s ease;
+      transform: scale(1.4);
+    }
+
+    & .image-panning > img:not(:hover) {
+      transition: 3.5s;
+      -moz-transition: all 3.5s ease;
+      -webkit-transition: all 3.5s ease;
+      -o-transition: all 3.5s ease;
+      -ms-transition: all 3.5s ease;
+      transform: scale(1.1);
+    }
   }
 }
-
 .image-menu {
   position: absolute;
   top: 72%;
@@ -757,7 +761,7 @@ div#mobile-button-wrapper {
 }
 
 .projects-before-after {
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -803,7 +807,10 @@ div.is-absolute {
 }
 
 .owl-carousel {
+  width: 80%;
   margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 1px 1px 11px 1px;
 }
 

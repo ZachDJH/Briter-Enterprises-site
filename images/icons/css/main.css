@@ -583,26 +583,28 @@ div#mobile-button-wrapper {
   width: 100%;
 }
 
-.slider-item {
+#projects {
+  margin-top: 160px;
+}
+#projects .slider-item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 160px;
   justify-content: center;
   width: 100%;
 }
-.slider-item .image-panning {
+#projects .slider-item .image-panning {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   border: 1px solid black;
 }
-.slider-item .image-panning > img {
+#projects .slider-item .image-panning > img {
   min-width: 100%;
   height: auto;
 }
-.slider-item .image-panning > img:hover {
+#projects .slider-item .image-panning > img:hover {
   transition: 0.5s;
   -moz-transition: all 3.5s ease;
   -webkit-transition: all 3.5s ease;
@@ -610,7 +612,7 @@ div#mobile-button-wrapper {
   -ms-transition: all 3.5s ease;
   transform: scale(1.4);
 }
-.slider-item .image-panning > img:not(:hover) {
+#projects .slider-item .image-panning > img:not(:hover) {
   transition: 3.5s;
   -moz-transition: all 3.5s ease;
   -webkit-transition: all 3.5s ease;
@@ -717,7 +719,7 @@ div#mobile-button-wrapper {
   }
 }
 .projects-before-after {
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -778,7 +780,10 @@ div.is-absolute {
 }
 
 .owl-carousel {
+  width: 80%;
   margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 1px 1px 11px 1px;
 }
 
