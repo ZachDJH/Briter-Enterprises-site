@@ -674,7 +674,7 @@ div#mobile-button-wrapper {
   }
 }
 @media screen and (max-width: 962px) {
-  .slider-item {
+  #projects .slider-item {
     flex-direction: column;
   }
 
