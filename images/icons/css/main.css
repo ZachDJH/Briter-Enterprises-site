@@ -275,7 +275,7 @@ header {
     display: none;
   }
 }
-@media screen and (max-width: 962px) and (min-width: 200px) {
+@media screen and (max-width: 1360px) and (min-width: 200px) {
   #navigation-content {
     display: none;
   }
@@ -295,7 +295,7 @@ header {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 72px;
+    top: 150px;
     left: 100%;
     right: 0;
     width: 100%;
@@ -328,13 +328,17 @@ header {
   }
   .mobile-menu .contact > a {
     width: 2px;
+    text-align: center;
     color: black;
   }
   .mobile-menu .contact-icon {
     color: #0066ff;
   }
   .mobile-menu .contact {
-    height: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    height: 20px;
   }
 }
 @media screen and (min-width: 100px) and (max-width: 270px) and (min-height: 150px) and (orientation: portrait) {
@@ -347,7 +351,7 @@ header {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: -10px;
+    top: 150px;
     left: 100%;
     right: 0;
     width: 100%;
@@ -358,7 +362,7 @@ header {
     flex-wrap: wrap;
     flex: 1;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .mobile-menu .nav-buttons {
     display: flex;
@@ -382,6 +386,7 @@ header {
   }
   .mobile-menu .contact {
     height: 50px;
+    text-align: center;
   }
 }
 #logo {
@@ -571,15 +576,23 @@ div#mobile-button-wrapper {
     visibility: hidden;
   }
 }
-@media screen and (max-width: 962px) {
+@media screen and (max-width: 1360px) {
   div#mobile-button-wrapper {
     visibility: visible;
+  }
+}
+@media screen and (max-width: 443px) and (min-height: 150px) and (orientation: portrait) {
+  div#mobile-button-wrapper {
+    visibility: visible;
+    float: right;
+    left: -15px;
   }
 }
 @media screen and (max-width: 400px) and (min-height: 150px) and (orientation: portrait) {
   div#mobile-button-wrapper {
     visibility: visible;
     float: right;
+    left: -20px;
   }
 }
 .content {
@@ -639,6 +652,8 @@ div#mobile-button-wrapper {
 .image-menu-header {
   position: relative;
   top: -70%;
+  text-align: center;
+  width: 100%;
   color: white;
 }
 .image-menu-header > a {
@@ -672,31 +687,26 @@ div#mobile-button-wrapper {
   top: 100%;
 }
 */
-@media screen and (max-width: 1172px) {
-  .image-menu {
-    top: 55%;
-  }
-}
-@media screen and (max-width: 962px) {
+@media screen and (max-width: 1245px) {
   #projects .slider-item {
     flex-direction: column;
   }
 
   .image-menu {
-    top: 86%;
+    top: 90%;
   }
 
   .image-menu-header {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     top: -70%;
-    width: 30%;
+    width: 100%;
     height: 60px;
     margin: 0 auto;
   }
 
   .image-menu-color {
     width: 100%;
-    margin-top: -100px;
+    margin-top: -105px;
   }
 
   /*
@@ -710,16 +720,44 @@ div#mobile-button-wrapper {
   }
   */
 }
+@media screen and (max-width: 1172px) {
+  .image-menu {
+    top: 90%;
+  }
+  .image-menu .image-menu-header > h2 {
+    margin-top: 1%;
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 362px) {
+  .image-menu {
+    top: 100%;
+  }
+  .image-menu > .image-menu-color {
+    margin-top: -70px;
+    height: 70px;
+  }
+  .image-menu > .image-menu-header > h2 {
+    margin-top: 4%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 262px) {
   .image-menu {
     top: 120%;
   }
   .image-menu > .image-menu-color {
+    margin-top: -102px;
     height: 70px;
   }
   .image-menu > .image-menu-header {
     top: -30%;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+  .image-menu > .image-menu-header > h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 .projects-before-after {
@@ -731,6 +769,13 @@ div#mobile-button-wrapper {
   font-family: Merriweather, serif, sans-serif;
 }
 
+@media screen and (max-width: 400px) {
+  div.header-bubble > h2 {
+    position: relative;
+    top: 7px;
+    font-size: 1.2rem;
+  }
+}
 .single-item {
   margin-top: 90px;
   margin-left: auto;
